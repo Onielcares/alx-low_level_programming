@@ -19,22 +19,49 @@ All of the following files are scripts and programs written in C:
 <th>Description</th>
 </tr>
 
+<tr>
+<td>0-preprocessor</td>	
+<td>Runs a C file through the preprocessor and saves the result into another file</td>
+</tr>
 
+<tr>
+<td>1-compiler</td>	
+<td>Compiles a C file but does not link</td>
+</tr>
 
-0-preprocessor	Runs a C file through the preprocessor and saves the result into another file
+<tr>
+<td>2-assembler</td>	
+<td>Generates the assembly code of a C code and saves it in an output file</td>
+</tr>
 
-1-compiler		Compiles a C file but does not link
+<tr>
+<td>3-name</td>	
+<td>Compiles a C file and creates an executable named cisfun</td>
+</tr>
 
-2-assembler	Generates the assembly code of a C code and saves it in an output file
+<tr>
+<td>4-puts.c</td>
+<td>Prints exactly "Programming is like building a multilingual puzzle"</td>
+</tr>
 
-3-name		Compiles a C file and creates an executable named cisfun
+<tr>
+<td>5-printf.c</td>
+<td>Prints exactly with proper grammar, but the outcome is a piece of art</td>
+</tr>
 
-4-puts.c		Prints exactly "Programming is like building a multilingual puzzle"
+<tr>
+<td>6-size.c</td>
+<td>Prints the size of various types on the computer it is compiled</td>
+</tr>
 
-5-printf.c		Prints exactly with proper grammar, but the outcome is a piece of art
+<tr>
+<td>100-intel</td>
+<td>Generates the assembly code (Intel syntax) of a C code and save it in an output file</td>
+</tr>
 
-6-size.c		Prints the size of various types on the computer it is compiled
+<tr>
+<td>101-quote.c</td>
+<td>Prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19</td>
+</tr>
+</table>
 
-100-intel		Generates the assembly code (Intel syntax) of a C code and save it in an output file
-
-101-quote.c	Prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19
