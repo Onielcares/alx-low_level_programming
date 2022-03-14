@@ -1,6 +1,6 @@
 <h1>Hello, World</h1>
 <br>
-Project done during <h3>Full Stack Software Engineering</h3> studies at <h3>ALX School</h3>. It aims to learn about what is entry point, basics commands (puts, printf, putchar), compilation process with gcc in C language.
+Project done during <strong>Full Stack Software Engineering</strong> studies at <strong>ALX School</strong>. It aims to learn about what is entry point, basics commands (puts, printf, putchar), compilation process with gcc in C language.
 
 <h2>Technologies</h2>
 <br>
@@ -13,6 +13,7 @@ Project done during <h3>Full Stack Software Engineering</h3> studies at <h3>ALX 
 <br>
 All of the following files are scripts and programs written in C:
 
+<table style="width:100%">
 <tr>
 <th>Filename</th>
 <th>Description</th>
