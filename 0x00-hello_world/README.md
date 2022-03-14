@@ -1,24 +1,24 @@
-Hello, World
+<h1>Hello, World</h1>
+<br>
+Project done during <h3>Full Stack Software Engineering</h3> studies at <h3>ALX School</h3>. It aims to learn about what is entry point, basics commands (puts, printf, putchar), compilation process with gcc in C language.
 
-Project done during Full Stack Software Engineering studies at Holberton School. It aims to learn about what is entry point, basics commands (puts, printf, putchar), compilation process with gcc in C language.
+<h2>Technologies</h2>
+<br>
+<ul>
+<li>C files are compiled using gcc 4.8.4</li>
+<li>Tested on Ubuntu 20.04 LTS</li>
+</ul>
 
-
-
-Technologies
-
-C files are compiled using gcc 4.8.4
-
-Tested on Ubuntu 20.04 LTS
-
-
-
-Files
-
+<h2>Files</h2>
+<br>
 All of the following files are scripts and programs written in C:
 
+<tr>
+<th>Filename</th>
+<th>Description</th>
+</tr>
 
 
-Filename		Description
 
 0-preprocessor	Runs a C file through the preprocessor and saves the result into another file
 
