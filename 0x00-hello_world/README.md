@@ -11,7 +11,8 @@ Project done during <strong>Full Stack Software Engineering</strong> studies at 
 
 <h2>Files</h2>
 <br>
-All of the following files are scripts and programs written in C:
+
+<p>All of the following files are scripts and programs written in C:</p>
 
 <table style="width:100%">
 <tr>
