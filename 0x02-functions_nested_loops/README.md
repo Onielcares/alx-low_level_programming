@@ -38,8 +38,8 @@ Project done during <strong>Full Stack Software Engineering</strong> studies at 
 </tr>
 
 <tr>
-<td>0-holberton.c<td>
-<td>Prints Holberton<td>
+<td>0-holberton.c</td>
+<td>Prints Holberton</td>
 </tr>
 
 <tr>
