@@ -1,8 +1,10 @@
 #include "main.h"
+
 /**
  * main - test function prints
  * Return: 0
  */
+
 int main(void)
 {
 int i;
