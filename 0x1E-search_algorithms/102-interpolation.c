@@ -1,38 +1,52 @@
 #include "search_algos.h"
 
 /**
- * interpolation_search - this searches for a value in a sorted array of integers
- * using the Interpolation search algorithm
- * @array: pointer to the first element of the array to search in
- * @size: number of elements in array
- * @value: value to search for
- *
- * Return: the first index where value is located, or -1 on failure
+ * interpolation_search -  function that searches
+ * for a value in a sorted array of integers
+ *  using the Jump search algorithm
+ * @array: pointer to the first element of the array
+ * @size: number of element in array
+ * @value: value to be searched for in the array
+ * Return: the index of the searched element.
  */
+
 int interpolation_search(int *array, size_t size, int value)
 {
-	size_t l, m, r;
+	size_t low, high, middle_number;
 
-	if (array != NULL && size > 0)
+	low = 0;
+	high = size - 1;
+	if (!array)
+		return (-1);
+	while ((array[high] != array[low]) &&
+			(value >= array[low]) &&
+			(value <= array[high]))
 	{
-		l = 0;
-		r = size - 1;
-		while (array[l] != array[r])
+		middle_number = low + ((value - array[low]) *
+			 (high - low) / (array[high] - array[low]));
+		if (value > array[middle_number])
 		{
-			m = l + (((double)(r - l) / (array[r] - array[l])) * (value - array[l]));
-			if (m < l || m > r)
-			{
-				printf("Value checked array[%lu] is out of range\n", m);
-				break;
-			}
-			printf("Value checked array[%lu] = [%d]\n", m, array[m]);
-			if (array[m] < value)
-				l = m + 1;
-			else if (array[m] > value)
-				r = m - 1;
-			else
-				return (m);
+			printf("Value checked array[%ld] = [%d]\n",
+					middle_number, array[middle_number]);
+			low = middle_number + 1;
+		}
+		else if (value < array[middle_number])
+		{
+			printf("Value checked array[%ld] = [%d]\n",
+					middle_number, array[middle_number]);
+			high = middle_number - 1;
+		}
+		else
+		{
+			printf("Value checked array[%ld] = [%d]\n",
+					middle_number, array[middle_number]);
+			return (middle_number);
 		}
 	}
+	middle_number = low + ((value - array[low]) *
+			(double)(high - low) / (array[high] - array[low]));
+	printf("Value checked array[%ld] is out of range\n", middle_number);
+	if (array[low] == value)
+		return (low);
 	return (-1);
 }
